@@ -15,6 +15,26 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input id="navi-toggle" type="checkbox" class="navigation__checkbox">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book now</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -26,7 +46,7 @@
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
 
     </header>
@@ -126,7 +146,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -163,7 +183,7 @@
                                     <p class="card__price-value">290€</p>
                                 </div>
 
-                                <a href="#" onclick="return false;" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +218,7 @@
                                     <p class="card__price-value">590€</p>
                                 </div>
 
-                                <a href="#" onclick="return false;" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +253,7 @@
                                     <p class="card__price-value">990€</p>
                                 </div>
 
-                                <a href="#" onclick="return false;" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -357,87 +377,57 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
-    <!--<section class="grid-test">
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+        </div>
+
         <div class="row">
             <div class="col-1-of-2">
-                Col 1 of 2
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
             </div>
-
             <div class="col-1-of-2">
-                Col 1 of 2
+                <p class="footer__copyright">
+                    Copyright &copy; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestiae quia
+                    nesciunt fuga voluptatibus asperiores eum, itaque, cum in saepe omnis esse minus quaerat cupiditate
+                    necessitatibus, iste ipsa libero consectetur!
+                </p>
             </div>
         </div>
+    </footer>
 
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup_img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup_img">
             </div>
 
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
 
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-
-            <div class="col-2-of-3">
-                Col 2 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-1-of-4">
-                Col 1 of 4
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-terciary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde cum
+                    nisi. Autem, adipisci, officia enim quo optio perspiciatis ea incidunt tenetur excepturi in ab, qui
+                    possimus nemo eius? Unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum soluta,
+                    unde accusamus impedit tenetur perferendis a odit temporibus neque consequatur sed laborum provident
+                    recusandae maiores possimus, asperiores repudiandae nobis!</p>
+                <a href="#" class="btn btn--green">Book now</a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-2-of-4">
-                Col 2 of 4
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-
-            <div class="col-3-of-4">
-                Col 3 of 4
-            </div>
-        </div>
-    </section>-->
+    </div>
 </body>
 
 </html>
